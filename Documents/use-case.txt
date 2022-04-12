@@ -1,0 +1,34 @@
+@startuml
+skinparam actorStyle awesome
+left to right direction
+
+:Камера: as Cam
+:Робот: as Rob
+:Пользователь: as User
+
+(Обнаружение граффити) as Og
+(Обнаружение робота) as Or
+(Передача координат граффити роботу) as KorG
+(Отрисовка траектории движения от робота до граффити) as Trac
+(Отправка координат траектории движения до граффити роботу) as KorTrac
+
+(Отправка своих координат камере) as OtKor
+(Получение координат граффити) as PolKorG
+(Получение координат траектории движения до граффити) as PolKorTrac
+(Закраска граффити) as ZakG
+
+(Активация системы очистки) as PerKorCam
+
+Cam --> Og
+Cam --> Or
+Cam --> KorG
+Cam --> Trac
+Cam --> KorTrac
+
+Rob --> OtKor
+Rob --> PolKorG
+Rob --> PolKorTrac
+Rob --> ZakG
+
+User --> PerKorCam
+@enduml
