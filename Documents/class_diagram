@@ -1,0 +1,16 @@
+@startuml
+
+class CameraSystem{
+GraffitiDetect()
+CallRobotCoordinates()
+TrajectoryDrawing()
+}
+
+class Robot{
+MoveStraight()
+StartPainting()
+StopPainting()
+}
+
+CameraSystem -o Robot :has
+@enduml
