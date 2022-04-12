@@ -1,0 +1,20 @@
+@startuml
+
+[*] -> off
+off -> on: user press on
+on-> off: user press off
+on -> detection_graffiti : observation
+detection_graffiti -> off
+on --> detection_robot : observation
+detection_robot --> off
+detection_graffiti --> read_coord : reading
+detection_robot -> read_coord : reading
+read_coord --> off
+read_coord --> trajectory_drawing
+trajectory_drawing --> off
+trajectory_drawing --> transfer_inf_robot
+transfer_inf_robot --> off
+transfer_inf_robot-> move_robot
+move_robot -> off
+
+@enduml
