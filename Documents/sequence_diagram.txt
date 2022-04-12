@@ -1,0 +1,11 @@
+@startuml
+skinparam responseMessageBelowArrow true
+actor User
+User -> Camera_System : cleaningSystemActivation
+Camera_System -> Robot : sendMessageToRobot()
+Robot -> Camera_System : sendMessageToCameraSystem()
+Camera_System -> Robot : graffityDetected()
+Camera_System -> Robot : moveToGraffity()
+Robot -> Robot : startEngine()
+Camera_System -> Robot : connectToRobot()
+@enduml
