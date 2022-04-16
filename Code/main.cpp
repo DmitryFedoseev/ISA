@@ -1,6 +1,13 @@
 #include <iostream>;
 using namespace std;
 
+struct Photo
+{
+    int ma[100][40];
+    int mx;
+    int my;
+};
+
 class Controler
 {
 public:
@@ -54,9 +61,6 @@ class Camera
 
 class System
 {
-private:
-    Robot rob;
-    Camera cam;
 public:
     void on() {}
     void off() {}
