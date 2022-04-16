@@ -3,12 +3,11 @@
 [*] -> off
 off -> on: user press on
 on-> off: user press off
-on -> detection_graffiti : observation
 detection_graffiti -> off
 on --> detection_robot : observation
 detection_robot --> off
 detection_graffiti --> read_coord : reading
-detection_robot -> read_coord : reading
+detection_robot --> detection_graffiti : observation
 read_coord --> off
 read_coord --> trajectory_drawing
 trajectory_drawing --> off
