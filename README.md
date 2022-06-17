@@ -9,4 +9,4 @@
 
 
 ## Документация
--[KTC] (https://github.com/DmitryFedoseev/ISA/blob/main/Documents/KTC.png)
+- [KTC](https://github.com/DmitryFedoseev/ISA/blob/main/Documents/KTC.png)
