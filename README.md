@@ -2,11 +2,13 @@
 Практическая работа по курсу Архитектура информационных систем. Вариант №3 
 
 ## Содержание
-- [Code](https://github.com/DmitryFedoseev/ISA/tree/main/Code)
-- [Documents](https://github.com/DmitryFedoseev/ISA/tree/main/Documents)
+1. [Code](https://github.com/DmitryFedoseev/ISA/tree/main/Code)
+2. [Documents](https://github.com/DmitryFedoseev/ISA/tree/main/Documents)
 
-## Code 
-
+## Code
+Реализовано сетевое взаимодействие между камерой и роботом по протоколу UDP.
+- [Client](https://github.com/DmitryFedoseev/ISA/tree/main/Code/client)
+- [Server](https://github.com/DmitryFedoseev/ISA/tree/main/Code/server)
 
 ## Документация
 - [KTC](https://github.com/DmitryFedoseev/ISA/blob/main/Documents/KTC.png)
